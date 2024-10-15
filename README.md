@@ -31,51 +31,32 @@ This repository contains implementations of a Sudoku solver in both Python and C
    git clone <repository-url>
    cd <repository-directory>
 
-   For Python:
+### For Python
 
-Install the required library using pip:
-sh
-Copy code
-pip install colorama
-For C:
+1. Install the required library using pip:
 
-Compile the C program using a C compiler (e.g., GCC):
-sh
-Copy code
-gcc -o sudoku_solver sudoku_solver.c
-Usage
-Python Version
-Run the Python program:
+   ```sh
+   pip install colorama
 
-sh
-Copy code
-python sudoku_solver.py
-When prompted, choose whether to input your own Sudoku puzzle or use the default one by entering y or n.
+### For C 
 
-If you choose to input your own puzzle:
+1. Compile the C program using a C compiler (e.g., GCC):
+   ```sh
+   gcc -o sudoku_solver sudoku_solver.c
 
-Enter each row of the Sudoku grid as a string of 9 characters, using digits 1-9 for filled cells and X for empty cells.
-For example: 53XX7XXXX.
-The program will display the Sudoku grid and highlight changes as it solves the puzzle. Upon completion, it will inform you whether the puzzle was solved successfully or if no solution exists.
+## Usage
+### Python Version 
+1. Run the Python program:
+   ```sh
+   python sudoku_solver.py
+2. When prompted, choose whether to input your own Sudoku puzzle or use the default one by entering `y` or `n`.
+3. If you choose to input your own puzzle:
+   * Enter each row of the Sudoku grid as a string of 9 characters, using digits `1-9` for filled cells and `X` for empty cells.
+   * For example: `53XX7XXXX`.
+4. The program will display the Sudoku grid and highlight changes as it solves the puzzle. Upon completion, it will inform you whether the puzzle was solved successfully or if no solution exists.
 
-C Version
-Run the compiled C program:
-
-sh
-Copy code
-./sudoku_solver
-Follow the same steps as above for inputting the Sudoku grid.
-
-Example Input
-´´´
-Input your own sudoku? (y/n): y
-Row 1: 53XX7XXXX
-Row 2: 6XX195XXX
-Row 3: X98XXXX6X
-Row 4: 8XX6XXX3X
-Row 5: 4XX8X3X1X
-Row 6: 7XX2XXX6X
-Row 7: X6XXXX28X
-Row 8: XXX419X5X
-Row 9: XXXX8X79X
-´´´
+### C Version
+1. Run the compiled C program:
+   ```sh 
+   ./sudoku_solver
+2. Follow the same steps as above for inputting the Sudoku grid.
