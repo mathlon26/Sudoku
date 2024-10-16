@@ -48,7 +48,7 @@ This repository contains implementations of a Sudoku solver in both Python and C
 ### Python Version 
 1. Run the Python program:
    ```sh
-   python sudoku_solver.py
+   python sudoku.py
 2. When prompted, choose whether to input your own Sudoku puzzle or use the default one by entering `y` or `n`.
 3. If you choose to input your own puzzle:
    * Enter each row of the Sudoku grid as a string of 9 characters, using digits `1-9` for filled cells and `X` for empty cells.
@@ -58,5 +58,5 @@ This repository contains implementations of a Sudoku solver in both Python and C
 ### C Version
 1. Run the compiled C program:
    ```sh 
-   ./sudoku_solver
+   ./sudoku
 2. Follow the same steps as above for inputting the Sudoku grid.
